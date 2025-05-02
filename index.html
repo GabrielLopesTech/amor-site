@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="valentine-confession.css">
+    <link rel="shortcut icon" href="src/icone.png" type="image/x-icon">
+    <title>Grande amor da minha vida..🫶🏽</title>
+</head>
+
+<body>
+    <p class="instruction">Clicka no coração parça!</p>
+    <div class="container">
+        <label>
+            <div class="heart">
+                <audio id="som">
+                    <source src="src/musica.mp3" type="audio/mpeg">
+                    Seu navegador não suporta áudio.
+                </audio>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Love_Heart_SVG.svg" onclick="tocarMusica()" alt="Coração">
+            </div>
+            <input id="messageState" type="checkbox" style="display:none" />
+        </label>
+        <div class="message">
+            <h1 style="font-family: Cinzel, serif; font-size: 40px; letter-spacing: 1.2px;">Só nós dois..❤️</h1>
+            <p>
+                <span>
+                    &emsp; "Pra sempre eu quero estar. Ao seu lado amor", uma estrofe de uma música nunca foi tão verdadeira quanto está, nunca uma estrofe falou o que estava em minha mente desde o primeiro dia que te beijei, sem dúvidas alguma nunca uma estrofe expressou o meu desejo mais profundo.
+                </span>
+                <br> <br>
+                <span>
+                    <img src="src/3.jpeg" style="width: auto; height: 600px;" alt="">
+                    <br>
+                    &emsp; Poderia falar de todas as estrofes desta música que ditam bem todos os meus pensamentos diários, mas eu quero te parabenizar por ser uma mulher forte, extremamente linda, calma e muito esforçada. Mesmo com diversos desafios que você tem passado nos últimos dias você continua se esforçando para fazer todos que você ama feliz e isso é muito admirável, é tão bom vivenciar como você se tornou uma mulher maravilhosa. Bom, o que quero dizer é que eu te amo para sempre ❤️. 
+                    (Aproveita muito o seu dia minha vida 🫶🏾).
+                </span>
+            </p>
+            <br>
+            <div class="sincere">
+                <p style="font-weight: bold;">Com Amor,</p>
+                <p>Seu Lopinho</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function tocarMusica() {
+            const audio = document.getElementById('som');
+            audio.play().catch((error) => {
+                console.log('Erro ao tentar reproduzir o áudio:', error);
+            });
+        }
+    </script>
+
+    <script src="jquery.js"></script>
+    <script src="jquery2.1.js"></script>
+    <script defer src="valentine-confession.js"></script>
+</body>
+
+</html>
